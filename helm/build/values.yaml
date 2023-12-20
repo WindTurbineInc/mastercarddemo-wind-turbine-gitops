@@ -1,0 +1,15 @@
+app:
+  name: mastercarddemo-wind-turbine-app
+  namespace: mastercarddemo
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/mastercarddemo-wind-turbine
+  org: WindTurbineInc
+  name: mastercarddemo-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: mastercarddemo/wind-turbine-app
+  tag: latest
